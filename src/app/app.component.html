@@ -1,9 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="primary" class="z-depth-1">
   <span [routerLink]="['']">Mike Upton</span>
-  <button class="first nav-link" [routerLink]="['/repos']" mat-button><span>Projects</span></button>
+  <button class="first nav-link" [routerLink]="['/repos']" mat-button>
+    <span>Projects</span>
+  </button>
   <span class="example-spacer"></span>
-  <mat-icon class="example-icon">favorite</mat-icon>
-  <mat-icon class="example-icon">delete</mat-icon>
+  <fa
+    name="github"
+    class="example-icon"
+    style="font-size: 1.3em"
+    (click)="routeToProfile('github')"
+  ></fa>
+  <fa
+    name="linkedin"
+    class="example-icon"
+    style="font-size: 1.3em"
+    (click)="routeToProfile('linkedin')"
+  ></fa>
+  <fa
+    name="twitter"
+    class="example-icon"
+    style="font-size: 1.3em"
+    (click)="routeToProfile('twitter')"
+  ></fa>
+  <fa
+    name="codepen"
+    class="example-icon"
+    style="font-size: 1.3em"
+    (click)="routeToProfile('codepen')"
+  ></fa>
 </mat-toolbar>
 <router-outlet></router-outlet>
