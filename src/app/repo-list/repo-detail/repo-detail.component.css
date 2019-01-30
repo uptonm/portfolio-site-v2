@@ -1,0 +1,13 @@
+.repo-card {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.avatar-image {
+  background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+  background-size: cover;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
