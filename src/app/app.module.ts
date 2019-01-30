@@ -6,18 +6,28 @@ import {
   MatButtonModule,
   MatToolbarModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatSelectModule,
+  MatInputModule,
+  MatDividerModule
 } from '@angular/material';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RepoListComponent } from './repo-list/repo-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RepoDetailComponent } from './repo-list/repo-detail/repo-detail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, RepoListComponent, RepoDetailComponent],
+  declarations: [
+    AppComponent,
+    RepoListComponent,
+    RepoDetailComponent,
+    HomeComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +38,11 @@ import { RepoDetailComponent } from './repo-list/repo-detail/repo-detail.compone
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    AngularFontAwesomeModule
+    MatSelectModule,
+    MatInputModule,
+    MatDividerModule,
+    AngularFontAwesomeModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
