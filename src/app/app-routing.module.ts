@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RepoListComponent } from './repo-list/repo-list.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'repos', pathMatch: 'full', component: RepoListComponent }
+  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: 'repos', component: RepoListComponent }
 ];
 
 @NgModule({
