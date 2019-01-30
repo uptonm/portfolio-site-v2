@@ -14,11 +14,20 @@ export class RepoDetailComponent implements OnInit {
 
   ngOnInit() {}
 
+  appendImage(url: string) {
+    return url + '.png';
+  }
+
   routeTo(route: string) {
     if (route === '/star') {
       window.location.href = this.repo.url;
+    } else if (route === '/profile') {
+      window.location.href = `https://github.com/${
+        this.repo.last_update.author.username
+      }`;
+    } else {
+      window.location.href = `${this.repo.url}${route}`;
     }
-    window.location.href = `${this.repo.url}${route}`;
   }
 
   getValue() {

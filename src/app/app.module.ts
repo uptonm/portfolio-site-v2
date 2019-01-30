@@ -8,7 +8,8 @@ import {
   MatIconModule,
   MatCardModule,
   MatSelectModule,
-  MatInputModule
+  MatInputModule,
+  MatDividerModule
 } from '@angular/material';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -21,7 +22,12 @@ import { RepoDetailComponent } from './repo-list/repo-detail/repo-detail.compone
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, RepoListComponent, RepoDetailComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    RepoListComponent,
+    RepoDetailComponent,
+    HomeComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,6 +40,7 @@ import { HomeComponent } from './home/home.component';
     MatCardModule,
     MatSelectModule,
     MatInputModule,
+    MatDividerModule,
     AngularFontAwesomeModule,
     FlexLayoutModule
   ],
