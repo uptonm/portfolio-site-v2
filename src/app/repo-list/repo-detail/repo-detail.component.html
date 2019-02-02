@@ -6,7 +6,28 @@
         <mat-card-title
           ><a [href]="repo.url">{{ repo.repo_name }}</a></mat-card-title
         >
-        <mat-card-subtitle>{{ repo.language }}</mat-card-subtitle>
+        <mat-card-subtitle>
+          <i
+            *ngIf="repo.language === 'JavaScript'"
+            class="devicon-javascript-plain colored"
+          ></i>
+          <i
+            *ngIf="repo.language === 'TypeScript'"
+            class="devicon-typescript-plain colored"
+          ></i>
+          <i
+            *ngIf="repo.language === 'Java'"
+            class="devicon-java-plain colored"
+          ></i>
+          <i
+            *ngIf="repo.language === 'CSS'"
+            class="devicon-angularjs-plain colored"
+          ></i>
+          <i
+            *ngIf="repo.language === 'React'"
+            class="devicon-react-original colored"
+          ></i>
+        </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>{{ repo.description }}</p>
@@ -79,9 +100,7 @@
         </div>
 
         <div class="changes-col">
-          <i class="material-icons yellow">
-            swap_calls
-          </i>
+          <i class="material-icons yellow"> swap_calls </i>
           <span
             >{{ repo.last_update.changes.modified.length }} files changed</span
           >

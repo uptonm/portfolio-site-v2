@@ -1,5 +1,5 @@
 .avatar-image {
-  background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+  background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
   background-size: cover;
 }
 
@@ -68,7 +68,7 @@
   align-content: stretch;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .container {
     width: 100%;
     display: flex;
@@ -85,4 +85,8 @@
     justify-content: space-around;
     align-content: center;
   }
+}
+
+.colored {
+  font-size: 1.5em;
 }
