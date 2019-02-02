@@ -68,6 +68,13 @@
   align-content: stretch;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
 @media (max-width: 1000px) {
   .container {
     width: 100%;
